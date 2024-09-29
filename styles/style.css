@@ -21,6 +21,8 @@
 
 .rec {
   position: absolute;
+  top: 10px;
+  right: 10px;
   display: var(--rec-display, flex);
   justify-self: end;
   gap: 10px;
@@ -32,7 +34,7 @@
 .rec::after {
   content: ' ';
   position: relative;
-  top: 7px;
+  top: 6px;
   display: inline-block;
   width: 9px;
   height: 9px;
@@ -111,6 +113,10 @@
 }
 
 /*ГРАНИЦЫ В УГЛУ СТРАНИЦЫ*/
+
+.decorated-zone {
+  position: relative;
+}
 
 .decorated-zone::after {
   content: '';
@@ -277,6 +283,7 @@
   
   .rec {
     top: 20px;
+    right: 20px;
   }
   
   .header__text {
